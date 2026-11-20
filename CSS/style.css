@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    position: sticky;
+    top:0;
+    background-color: white;
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.headerleft .logo {
+    border-right: 1px solid rgb(242, 242, 242);
+    padding: 25px;
+}
+
+.headerleft .logo:hover,
+.headerleft .address:hover {
+    cursor: pointer;
+    background-color: rgb(252, 252, 252);
+}
+
+.headerleft .address {
+    padding: 20px 45px;
+    line-height: 21px;
+}
+
+.headerleft .address h3 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.headerleft .address p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+}
+
+header form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+
+    background-color: rgb(248, 248, 248);
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid rgb(242, 242, 242);
+}
+
+.searchBox .searchicon {
+    margin: 10px;
+}
+
+header form .input {
+    width: 90%;
+}
+
+
+
+header form .input input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+header form .input input:focus {
+    outline: none;
+}
+
+.headerbuttons {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerbuttons .headerloginbutton button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgb(54, 54, 54);
+    padding: 30px 50px;
+}
+
+.headerbuttons button:first-child:hover {
+    background-color: rgb(252, 252, 252);
+    cursor: pointer;
+}
+
+.headerbuttons .cartbutton {
+    display: flex;
+    background-color: rgb(12, 131, 31);
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    gap:10px;
+    align-items: center;
+}
+
+.headerbuttons .cartbutton button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+/* Hero Section */
+
+.heroImage{
+    max-width: 1280px;
+    margin: auto;
+    cursor:pointer;
+}
+
+.heroImage img{
+width:100%;
+}
+
+
+/* Banner Section */
+
+.bannerSection{
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    gap:20px;
+    padding: 15px;
+}
+
+.bannerImage{
+    flex-basis:27%;
+}
+
+.bannerImage img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* Item Section */
+
+.itemSection{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex-basis: 10%;
+}
+
+.item img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/*Items Section */
+
+.dairyItems,.snacksItems,.mouthFreshenerItems,.coldDrinkItems,.candiesItems{
+    max-width: 1280px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Applying the same styles for all headings with the help of heading class*/
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h3{
+    font-size: 24px;
+    font-weight: 600;
+    color:#1c1c1c;
+}
+
+.heading a{
+    color:#0c831f;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5%;
+    padding: 15px 0px;    
+}
+
+/* Applying same styles for all prodctItems */
+
+.dairyproduct{
+    flex-basis: 15%;
+    height: 290px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 9px;
+    padding: 0 12px 10px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.productImage{
+    display: flex;
+    justify-content: center;
+}
+
+.productImage img{
+    width: 90%;
+    object-fit: contain;
+}
+
+.productDeliveryTime{
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    width: 60px;
+    padding: 2px;
+}
+
+.productDeliveryTime img{
+    width: 12px;
+    height: 12px;
+}
+
+.productDeliveryTime p{
+    font-size: 9px;
+    font-weight: 700;
+    color:#363636;
+}
+
+.productName h4{
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f1f1f;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.productQuantity{
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+    margin-top: 10px;
+}
+
+.productPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productPrice p{
+    font-size: 12px;
+    font-weight: 600;
+    color:#1f1f1f;
+}
+
+.discount p{
+    display: flex;
+    flex-direction: column;
+}
+
+.discount p span:nth-child(2){
+    color: #828282;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.productPrice button{
+    border: 1px solid rgb(49, 134, 36);
+    padding: 7px 20px;
+    color: #0c831f;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+/* Footer Section */
+
+footer{
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer .footerpart1{
+    display: flex;
+    gap:3%;
+}
+
+.footerpart1 .usefulLinks{
+    flex-basis:30% ;
+}
+
+.usefulLinks h3{
+    margin-bottom: 15px;
+}
+
+.usefulLinks .links{
+    display: flex;
+}
+
+.links ul{
+    flex-basis: 33%;
+    list-style: none;
+    /* padding: 20px; */
+}
+
+.usefulLinks .links ul li{
+    margin: 10px 0;
+}
+
+
+.links ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footerpart1 .categories{
+    flex-basis:67%;
+}
+
+.categories .heading{
+    display: flex;
+    justify-content: left;
+    gap:20px;
+    align-items: center;
+}
+
+.usefulLinks h3,.categories h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.categories a{
+    color: #0c831f;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.categories .heading{
+    margin-bottom: 40px;
+}
+
+.categories .links ul{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.categories .links ul li{
+    margin: 5px 0;
+}
+
+
+.footerpart2{
+    max-width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerpart2 .copyright p{
+    font-size: 12px;
+    font-weight: 400;
+    color:#666666;
+}
+
+.footerpart2 .appLink{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footerpart2 .appLink h4{
+    font-size: 14px;
+    font-weight: 600;
+    color:#666666;
+}
+
+.footerpart2 .appLink img{
+    width: 90px;
+    height: 30px;
+}
+
+.footerpart2 .appImages{
+    display: flex;
+    gap: 15px;
+}
+
+.footerpart2 .socialIcons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footerpart2 .socialIcons .icon{
+    background-color: rgb(31, 31, 31);
+    border-radius:50% ;
+    cursor: pointer;
+    padding: 10px 8px;
+}
+
+.footerpart2 .socialIcons .icon i{
+    color: white;
+    font-size: 20px;
+}
+
+.footerpart3 .info{
+    padding: 30px 10px 10px 10px;
+}
+
+.footerpart3 .info p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}

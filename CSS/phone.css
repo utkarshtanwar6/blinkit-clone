@@ -1,0 +1,86 @@
+@media only screen and (max-width:750px){
+    header{
+        flex-direction: column;
+    }
+
+    header .headerleft{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .headerleft address{
+        text-align: center;
+    }
+
+    .headerleft .address h3{
+        font-size: 15px;
+    }
+
+    .headerleft .address p{
+        font-size: 11px;
+    }
+
+    header .searchBox{
+        width: 95%;
+        margin: auto;
+    }
+
+    .bannerSection{
+        flex-direction:column ;
+    }
+
+}
+
+@media only screen and (max-width:660px){
+    .dairyproduct{
+        flex-basis:32%;
+    }
+    .products{
+        gap:2%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    header .headerleft .logo{
+        padding:15px 10px;
+    }
+
+    header .headerleft .address{
+        padding:15px 10px;
+    }
+
+    .heroImage{
+        padding: 5px;
+    }
+
+    .itemSection .items .item{
+        flex-basis: 25%;
+    }
+
+    .dairyproduct{
+        flex-basis:49%;
+    }
+    .products{
+        gap:2%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .headerleft{
+        flex-direction: column;
+    }
+
+    header .headerleft .logo{
+        padding-bottom: 0px;
+        border-right: none;
+    }
+
+    header .headerleft .address{
+        padding:5px 10px;
+    }
+
+    .footerpart2 .appLink{
+        flex-direction: column;
+    }
+    
+}

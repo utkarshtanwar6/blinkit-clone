@@ -1,0 +1,83 @@
+@media only screen and (max-width:1000px) {
+
+    .headerbuttons {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background-color: white;
+        z-index: 9999;
+        display: flex;
+    }
+
+    .headerloginbutton,
+    .cartbutton {
+        flex-basis: 50%;
+    }
+
+    .headerbuttons .headerloginbutton button {
+        padding: 15px 50px;
+    }
+
+    .headerbuttons .headerloginbutton {
+        text-align: center;
+    }
+
+    .headerbuttons .cartbutton {
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .heroImage {
+        margin-top: 10px;
+    }
+
+
+    .itemSection .items .item{
+        flex-basis:16.6%;
+    }
+
+    .dairyproduct{
+        flex-basis: 23%;
+    }
+
+    .products{
+        gap:1.5%;
+    }
+    
+    /* Footer Section */
+
+    footer{
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    .footerpart1{
+        flex-direction: column;
+    }
+
+    .categories .links ul{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .categories{
+        margin-top: 30px;
+    }
+
+    .footerpart2{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .footerpart2 .appLink{
+        margin:0px;
+    }
+
+    .footerpart2{
+    padding: 20px;
+    }
+
+    .footerpart3 .info{
+        padding-bottom: 40px;
+    }
+}   
